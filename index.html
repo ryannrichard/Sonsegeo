@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Módulo 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- SEÇÃO: HEADER (responsável: Ryann) -->
+  <header class="w-full font-sans">
+    <!-- 1. BARRA DE NAVEGAÇÃO SUPERIOR -->
+    <nav class="bg-[#1c2c54] text-white px-6 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="logo.png" alt="Nobre Piscinas" class="h-10 object-contain" />
+      </div>
+  
+      <!-- Menu de Links -->
+      <div class="hidden md:flex items-center gap-6 text-xs uppercase font-medium tracking-wide">
+        <!-- Ícones de Busca e Usuário -->
+        <div class="flex items-center gap-3 mr-2 opacity-80">
+          <button class="hover:opacity-100 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </button>
+          <button class="hover:opacity-100 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </button>
+        </div>
+  
+        <a href="#" class="hover:text-amber-400 transition">Home</a>
+        <a href="#" class="hover:text-amber-400 transition">Produtos</a>
+        <a href="#" class="hover:text-amber-400 transition">Lançamentos</a>
+        <a href="#" class="hover:text-amber-400 transition">Garantia</a>
+        <a href="#" class="hover:text-amber-400 transition">Contatos</a>
+      </div>
+
+      
+      <button class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+  
+    <!-- 2. HERO SECTION (Destaque Principal) -->
+    <section class="relative w-full min-h-[500px] lg:min-h-[580px] flex items-center bg-cover bg-center" style="background-image: url('sua-imagem-de-piscina.jpg');">
+      <!-- Degradê/Overlay escuro para dar contraste e leitura ao texto -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#005c8a]/80 via-[#0077b6]/50 to-transparent"></div>
+  
+      <!-- Conteúdo Textual -->
+      <div class="relative z-10 max-w-7xl mx-auto px-6 sm:px-12 w-full py-16">
+        <div class="max-w-xl text-white">
+          
+          <!-- Título com destaque em Laranja -->
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">
+            <span class="text-[#ff8a00]">Experiência no DNA</span> na fabricação de piscinas de fibra
+          </h1>
+  
+          <!-- Subtítulo / Descrição -->
+          <p class="text-sm sm:text-base text-gray-100 font-normal leading-relaxed mb-8 max-w-lg">
+            Uma mesma marca reunida com 25 anos de história para contar. A Nobre Piscinas possui em seu DNA a experiência de produzir piscinas de fibra de vidro.
+          </p>
+  
+          <!-- Botões de Ação -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#" class="bg-[#ff8a00] hover:bg-[#e07900] text-white font-bold text-xs tracking-wider uppercase px-6 py-3.5 rounded transition text-center shadow-md">
+              Conheça Nossa História
+            </a>
+            <a href="#" class="border border-white hover:bg-white/20 text-white font-bold text-xs tracking-wider uppercase px-6 py-3.5 rounded transition text-center">
+              Ver Piscinas
+            </a>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- SEÇÃO: HERO (responsável: integrante B) -->
+  <!-- SEÇÃO: CARDS (responsável: integrante C) -->
+  <!-- SEÇÃO: FAQ (responsável: integrante D) -->
+  <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
+</body>
+</html>
