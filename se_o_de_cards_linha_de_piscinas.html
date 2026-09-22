@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhas de Piscinas - Cards</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Navigation Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar hiding for smooth slider experience */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-[#f3f7fe] min-h-screen flex items-center justify-center p-4 sm:p-8 lg:p-12">
+
+    <div class="max-w-7xl w-full mx-auto space-y-6">
+        
+        <!-- Header Controls (Arrows on top right) -->
+        <div class="flex justify-end items-center gap-3 pr-2">
+            <button 
+                id="prevBtn" 
+                onclick="scrollCards(-320)" 
+                class="w-10 h-10 rounded-full border border-blue-200 text-blue-600 bg-white hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center shadow-xs focus:outline-none focus:ring-2 focus:ring-blue-400"
+                aria-label="Anterior"
+            >
+                <i class="fa-solid fa-chevron-left text-sm"></i>
+            </button>
+            <button 
+                id="nextBtn" 
+                onclick="scrollCards(320)" 
+                class="w-10 h-10 rounded-full border border-blue-200 text-blue-600 bg-white hover:bg-blue-50 active:scale-95 transition-all flex items-center justify-center shadow-xs focus:outline-none focus:ring-2 focus:ring-blue-400"
+                aria-label="Próximo"
+            >
+                <i class="fa-solid fa-chevron-right text-sm"></i>
+            </button>
+        </div>
+
+        <!-- Horizontal Scrollable Cards Container -->
+        <div 
+            id="cardsContainer" 
+            class="flex gap-5 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory py-2 px-1"
+        >
+            
+            <!-- Card 1: Linha Princesa -->
+            <div class="min-w-[260px] sm:min-w-[280px] lg:min-w-[300px] flex-1 snap-start flex flex-col group">
+                <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-gray-100 shadow-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800&auto=format&fit=crop" 
+                        alt="Linha Princesa" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/400x300/dbeafe/1e3a8a?text=Linha+Princesa'"
+                    >
+                </div>
+                <h3 class="text-[#1d3557] font-bold text-base sm:text-lg mb-2 leading-snug">
+                    Linha Princesa
+                </h3>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                    Compactas, possuem degraus internos, bancos e bordas rebaixadas para deixar a instalação mais fácil e segura.
+                </p>
+            </div>
+
+            <!-- Card 2: Linha Condessa -->
+            <div class="min-w-[260px] sm:min-w-[280px] lg:min-w-[300px] flex-1 snap-start flex flex-col group">
+                <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-gray-100 shadow-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop" 
+                        alt="Linha Condessa" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/400x300/dbeafe/1e3a8a?text=Linha+Condessa'"
+                    >
+                </div>
+                <h3 class="text-[#1d3557] font-bold text-base sm:text-lg mb-2 leading-snug">
+                    Linha Condessa
+                </h3>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                    Compactas, possuem degraus internos, bancos e bordas rebaixadas para deixar a instalação mais fácil e segura.
+                </p>
+            </div>
+
+            <!-- Card 3: Linha Imperatriz -->
+            <div class="min-w-[260px] sm:min-w-[280px] lg:min-w-[300px] flex-1 snap-start flex flex-col group">
+                <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-gray-100 shadow-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop" 
+                        alt="Linha Imperatriz" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/400x300/dbeafe/1e3a8a?text=Linha+Imperatriz'"
+                    >
+                </div>
+                <h3 class="text-[#1d3557] font-bold text-base sm:text-lg mb-2 leading-snug">
+                    Linha Imperatriz
+                </h3>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                    Amplo espaço interno sem deixar o conforto de lado. Esta linha conta com escadas internas e banco lateral, que deixam o visual mais moderno.
+                </p>
+            </div>
+
+            <!-- Card 4: Linha Duquesa -->
+            <div class="min-w-[260px] sm:min-w-[280px] lg:min-w-[300px] flex-1 snap-start flex flex-col group">
+                <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-gray-100 shadow-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=800&auto=format&fit=crop" 
+                        alt="Linha Duquesa" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/400x300/dbeafe/1e3a8a?text=Linha+Duquesa'"
+                    >
+                </div>
+                <h3 class="text-[#1d3557] font-bold text-base sm:text-lg mb-2 leading-snug">
+                    Linha Duquesa
+                </h3>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                    Ideais para aproveitar o amplo espaço interno com conforto e a diversão. As piscinas possuem escadas de canto e banco interno.
+                </p>
+            </div>
+
+            <!-- Card 5: Linha Marquesa -->
+            <div class="min-w-[260px] sm:min-w-[280px] lg:min-w-[300px] flex-1 snap-start flex flex-col group">
+                <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-gray-100 shadow-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?q=80&w=800&auto=format&fit=crop" 
+                        alt="Linha Marquesa" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/400x300/dbeafe/1e3a8a?text=Linha+Marquesa'"
+                    >
+                </div>
+                <h3 class="text-[#1d3557] font-bold text-base sm:text-lg mb-2 leading-snug">
+                    Linha Marquesa
+                </h3>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                    Para a família desfrutar de muito espaço interno e conforto com suas escadas e degraus internos.
+                </p>
+            </div>
+
+            <!-- Card 6: Linha Viscondessa -->
+            <div class="min-w-[260px] sm:min-w-[280px] lg:min-w-[300px] flex-1 snap-start flex flex-col group">
+                <div class="relative overflow-hidden rounded-2xl mb-4 aspect-[4/3] bg-gray-100 shadow-sm">
+                    <img 
+                        src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop" 
+                        alt="Linha Viscondessa" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/400x300/dbeafe/1e3a8a?text=Linha+Viscondessa'"
+                    >
+                </div>
+                <h3 class="text-[#1d3557] font-bold text-base sm:text-lg mb-2 leading-snug">
+                    Linha Viscondessa
+                </h3>
+                <p class="text-gray-600 text-xs leading-relaxed">
+                    Para a família desfrutar de muito espaço interno e conforto com suas escadas e degraus internos.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function scrollCards(amount) {
+            const container = document.getElementById('cardsContainer');
+            if (container) {
+                container.scrollBy({
+                    left: amount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
+</body>
+</html>

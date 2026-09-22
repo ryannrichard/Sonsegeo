@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prática Tailwind - Dia 2 [Atividade 1]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#f2f6fe] font-sans text-gray-700 antialiased min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+
+    <!-- Cabeçalho com botões de navegação -->
+    <div class="flex justify-end items-center mb-6 gap-2">
+        <button id="prevBtn" aria-label="Anterior"
+            class="w-10 h-10 rounded-full border border-blue-200 bg-white text-blue-600 flex items-center justify-center shadow-sm hover:bg-blue-50 transition-colors focus:outline-none">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+        <button id="nextBtn" aria-label="Seguinte"
+            class="w-10 h-10 rounded-full border border-blue-600 bg-white text-blue-600 flex items-center justify-center shadow-sm hover:bg-blue-50 transition-colors focus:outline-none">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+    </div>
+
+    <article class="w-full max-w-[400px] bg-white rounded-xl shadow-lg overflow-hidden">
+
+        <img src="assets/piscina.jpg" alt="Troféu representando uma premiação" class="w-full h-full object-cover" />
+
+        <div class="p-6">
+
+            <h3 class="text-blue-900 font-bold text-lg mt-1 px-1">
+                Linha Princesa
+            </h3>
+
+            <p class="text-black-500 text-xs leading-relaxed px-3">
+                Compactas,
+                possuem degraus internos, bancos e bordas rebaixadas para
+                deixar a instalação mais fácil e segura.
+            </p>
+        </div>
+    </article>
+
+</body>
+
+</html>
