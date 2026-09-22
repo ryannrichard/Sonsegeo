@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,37 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
 </head>
-<body>
-  <!-- SEÇÃO: HEADER (responsável: integrante A) -->
-  <!-- SEÇÃO: HERO (responsável: integrante B) -->
-  <!-- SEÇÃO: CARDS (responsável: integrante C) -->
-  <!-- SEÇÃO: FAQ (responsável: integrante D) -->
-  <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
+
+<body class="min-h-screen flex items-center justify-center bg-base-200 p-4">
+  <fieldset class="flex flex-col max-w-md bg-blue-950 fieldset bg-base-200 border-base-100 rounded-lg w-xs border gap-6 p-4 justify-center">
+    <div>
+      <h2 class="text-center text-white text-2xl">Solicitar orçamento</h2>
+      <p class="text-center text-white text-2xs">Preencha os campos abaixo para continuarmos avançando como seu
+        orçamento.</p>
+    </div>
+
+    <div class="gap-4">
+      <label class="label text-blue-200">Nome</label>
+      <input type="text" class="bg-[#3b5998] w-full input" placeholder="Digite eu nome" />
+    </div>
+
+    <div class="gap-4">
+      <label class="label text-blue-200">Telefone</label>
+      <input type="tel" class="bg-[#3b5998] w-full input" placeholder="Digite seu numero de Telefone" />
+    </div>
+
+    <div class="gap-4">
+      <label class="label text-blue-200">Email</label>
+      <input type="email" class="bg-[#3b5998] w-full input" placeholder="Digite seu e-mail" />
+    </div>
+
+    <div class="gap-4">
+      <label class="label text-blue-200">Cidade/UF</label>
+      <input type="text" class="bg-[#3b5998] w-full input" placeholder="Digite a cidade e o estado de instalação da piscina"/>
+    </div>
+
+    <button class="w-full bg-orange-500 btn btn-neutral text-xs mt-4">SOLICITAR ATENDIMENTO</button>
+  </fieldset>
 </body>
+
 </html>
