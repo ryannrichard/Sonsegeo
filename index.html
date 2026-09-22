@@ -41,6 +41,167 @@
   </header>
   <!-- SEÇÃO: HERO (responsável: integrante B) -->
   <!-- SEÇÃO: CARDS (responsável: integrante C) -->
+  <body class="bg-white antialiased text-gray-800">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-end mb-8">
+
+            <div class="space-y-3">
+                <span class="text-sky-500 font-semibold text-xs tracking-wider uppercase block">
+                    NOSSOS MODELOS DE PISCINAS
+                </span>
+                <h2 class="text-slate-800 font-bold text-2xl sm:text-3xl md:text-4xl leading-tight">
+                    Escolha o melhor formato<br class="hidden sm:inline" /> para o seu espaço
+                </h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-end lg:items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm sm:text-base leading-relaxed">
+                    São diversos modelos que estão disponíveis para sua necessidade. Consulte a lista de modelos de
+                    piscinas abaixo e descubra qual se encaixa melhor no seu espaço.
+                </p>
+
+                <div class="flex items-end gap-3">
+                    <button id="prevBtn" aria-label="Anterior"
+                        class="w-10 h-10 rounded-full border border-sky-300 bg-white text-sky-500 flex items-center justify-center shadow-sm hover:bg-sky-50 active:scale-95 transition-all focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <button id="nextBtn" aria-label="Seguinte"
+                        class="w-10 h-10 rounded-full border border-sky-500 bg-white text-sky-500 flex items-center justify-center shadow-sm hover:bg-sky-50 active:scale-95 transition-all focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Seção de Cards Rolável -->
+        <div id="cardsContainer"
+            class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+
+            <div
+                class="card bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden min-w-[260px] sm:min-w-[280px] max-w-[280px] snap-start flex-shrink-0 hover:shadow-md transition-shadow">
+                <figure class="w-full">
+                    <img src="https://i.pinimg.com/1200x/4d/cd/2e/4dcd2ec28beb850580dccc52c1a2546d.jpg"
+                        alt="Linha Princesa" class="w-full h-56 object-cover">
+                </figure>
+                <div class="card-body p-5">
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Linha Princesa
+                    </h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                        Compactas, possuem degraus internos, bancos e borda rebaixados para deixar a instalação mais
+                        fácil e segura.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="card bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden min-w-[260px] sm:min-w-[280px] max-w-[280px] snap-start flex-shrink-0 hover:shadow-md transition-shadow">
+                <figure class="w-full">
+                    <img src="https://i.pinimg.com/736x/f7/1f/2f/f71f2f942e4b33b5d321426c8044d662.jpg"
+                        alt="Linha Condessa" class="w-full h-56 object-cover">
+                </figure>
+                <div class="card-body p-5">
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Linha Condessa
+                    </h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                        Compactas, possuem degraus internos, bancos e borda rebaixados para deixar a instalação mais
+                        fácil e segura.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="card bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden min-w-[260px] sm:min-w-[280px] max-w-[280px] snap-start flex-shrink-0 hover:shadow-md transition-shadow">
+                <figure class="w-full">
+                    <img src="https://i.pinimg.com/736x/54/35/96/5435960f1c451491241ab0229aab04ba.jpg"
+                        alt="Linha Imperatriz" class="w-full h-56 object-cover">
+                </figure>
+                <div class="card-body p-5">
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Linha Imperatriz
+                    </h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                        Amplo espaço interno sem deixar o conforto de lado. Esta linha conta com escadas internas e
+                        banco lateral, que deixam o visual mais moderno.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="card bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden min-w-[260px] sm:min-w-[280px] max-w-[280px] snap-start flex-shrink-0 hover:shadow-md transition-shadow">
+                <figure class="w-full">
+                    <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=600&q=80"
+                        alt="Linha Duquesa" class="w-full h-56 object-cover">
+                </figure>
+                <div class="card-body p-5">
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Linha Duquesa
+                    </h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                        Ideais para aproveitar o amplo espaço interno com conforto e a diversão. As piscinas possuem
+                        escadas de canto e banco interno.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="card bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden min-w-[260px] sm:min-w-[280px] max-w-[280px] snap-start flex-shrink-0 hover:shadow-md transition-shadow">
+                <figure class="w-full">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80"
+                        alt="Linha Marquesa" class="w-full h-56 object-cover">
+                </figure>
+                <div class="card-body p-5">
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Linha Marquesa
+                    </h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                        Para a família desfrutar de muito espaço interno e conforto com suas escadas e degraus internos.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="card bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden min-w-[260px] sm:min-w-[280px] max-w-[280px] snap-start flex-shrink-0 hover:shadow-md transition-shadow">
+                <figure class="w-full">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80"
+                        alt="Linha Viscondessa" class="w-full h-56 object-cover">
+                </figure>
+                <div class="card-body p-5">
+                    <h3 class="text-lg font-semibold text-blue-900">
+                        Linha Viscondessa
+                    </h3>
+                    <p class="text-xs text-gray-500 leading-relaxed mt-1">
+                        Para a família desfrutar de muito espaço interno e conforto com suas escadas e degraus internos.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- Script de navegação suave pelas setas -->
+    <script>
+        const container = document.getElementById('cardsContainer');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        prevBtn.addEventListener('click', () => {
+            container.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+            container.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    </script>
+  <!-- SEÇÃO: CONTATO (responsável: Ryann) -->
   <!-- SEÇÃO: SOBRE NÓS (responsável: Aleff) -->
 <body class="bg-white antialiased text-gray-800">
     <section class="max-w-7xl mx-auto px-4 py-12">
@@ -80,7 +241,7 @@
           <!-- COLUNA DA DIREITA: Imagem -->
           <div class="w-full">
             <img 
-              src="assets/mulherseria.png" 
+              src="assets/img/mulherseria.png" 
               alt="Sobre Nós" 
               class="w-full h-[400px] sm:h-[500px] object-cover rounded-2xl shadow-sm"
             />
