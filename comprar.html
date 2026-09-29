@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Aula 37</title>
+  <title>Projeto Aula 37 - Compras</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -155,10 +156,68 @@
 
     </div>
   </section>
+<section>
+  <!-- SEÇÃO: CREDITOS (responsável: integrante A) -->
+  <section class="seletor-creditos-container my-6 font-['Sora']">
+    <!-- Card do Seletor e Preço -->
+    <div class="bg-base-200 p-6 rounded-box flex justify-between items-center">
+      <div>
+        <h3 class="font-semibold text-lg mb-4">Quantidade de créditos para compra</h3>
+        <div class="flex flex-row items-center gap-24">
+          <button id="btn-menos"><img src="assets/img/menos.png" alt="menos"></button>
+          <span id="valor-creditos" class="text-4xl font-semibold">100</span>
+          <button id="btn-mais" class=""><img src="assets/img/mais.png" alt="mais"></button>
+        </div>
+        <div class="w-full border-b border-gray-300 my-2"></div>
+        <p class="text-center text-gray-500 mt-2 ">Digite o valor aproximado</p>
+      </div>
 
-  <!-- SEÇÃO: CARDS (responsável: integrante C) -->
-  <!-- SEÇÃO: FAQ (responsável: integrante D) -->
-  <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
+      <!-- Total em Reais -->
+      <div>
+        <h3 class="font-semibold text-lg">Total em reais</h3>
+        <p id="total-reais" class="text-3xl font-bold mt-2">R$20.000,00</p>
+      </div>
+    </div>
+  
+    <!-- Termos e Informações -->
+    <div class="mt-6">
+      <details class="collapse collapse-arrow bg-base-100">
+        <summary class="collapse-title font-semibold">Mais informações sobre o produto</summary>
+        <div class="collapse-content">
+          <p class="text-xs text-gray-500">
+            <strong>ATENÇÃO:</strong> A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.
+          </p>
+        </div>
+      </details>
+    </div>
+  </section>
+</section>
+  <script>
+    const btnMenos = document.getElementById('btn-menos');
+    const btnMais = document.getElementById('btn-mais');
+    const valorCreditos = document.getElementById('valor-creditos');
+    const totalReais = document.getElementById('total-reais');
+
+    let quantidade = 100;
+    const precoPorCredito = 200; // R$ 20.000 / 100 créditos = R$ 200 cada
+
+    function atualizarInterface() {
+      valorCreditos.textContent = quantidade;
+      const total = quantidade * precoPorCredito;
+      totalReais.textContent = `R$${total.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+    }
+
+    btnMenos.addEventListener('click', () => {
+      if (quantidade > 10) { // Limite mínimo para não zerar/ficar negativo
+        quantidade -= 10;
+        atualizarInterface();
+      }
+    });
+
+    btnMais.addEventListener('click', () => {
+      quantidade += 10;
+      atualizarInterface();
+    });
+  </script>
 </body>
-
 </html>
