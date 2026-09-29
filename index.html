@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto Aula 37</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sora: ['Sora', 'sans-serif'],
+            sans: ['Sora', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
   <!-- SEÇÃO: HEADER (responsável: integrante A) -->
-  <!-- SEÇÃO: HERO (responsável: integrante B) -->
+  <!-- SEÇÃO: HERO 2 (responsável: Aleff) -->
+  <nav aria-label="Breadcrumb">
+    <ol class="flex items-center space-x-2 text-sm mb-3">
+      <li><a href="" class="text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors">Loja de Projetos</a></li>
+      
+      <li class="text-gray-400 select-none" aria-hidden="true">&rsaquo;</li>
+
+      <li><a href="" class="text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors">Comprar Créditos</a></li>
+
+      <li class="text-gray-400 select-none" aria-hidden="true">&rsaquo;</li>
+
+      <li><span href="" aria-current="page" class="text-gray-400 font-normal">Compra de Créditos</span></li>
+    </ol>
+  </nav>
+
+  <h1 class="font-sora font-bold text-2xl">Compra de Pontos Base</h1>
+
+  <hr class="border-gray-200 my-6 justify-content space-between">
   <!-- SEÇÃO: CARDS (responsável: integrante C) -->
   <!-- SEÇÃO: FAQ (responsável: integrante D) -->
   <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
 </body>
+
 </html>
