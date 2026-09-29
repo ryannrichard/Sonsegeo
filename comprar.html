@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compras - Aula 37</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sora: ['Sora', 'sans-serif'],
+            sans: ['Sora', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-900 font-sans p-6 md:p-10 min-h-screen flex flex-col">
+
+  <!-- HEADER (LAYSE) -->
+  <header class="navbar h-[57px] px-6 border-b mb-6">
+    <div class="flex-1">
+      <img src="assets/img/Vector.jpg" alt="Logo" class="w-38">
+    </div>
+
+    <div class="flex-none">
+      <img src="assets/img/user.jpg" alt="Perfil" class="w-26 rounded">
+    </div>
+  </header>
+
+  <div class="flex flex-col md:flex-row gap-8 items-start flex-1 w-full">
+
+    <!-- SIDEBAR (GABRIEP) -->
+    <aside class="w-full md:w-64 shrink-0 font-['Sora']">
+      <h2 class="flex font-bold text-2xl mb-8">Canal do cliente</h2>
+
+      <nav class="flex flex-col">
+        <div class="flex flex-col mb-8">
+          <p class="flex flex-row hover:font-bold hover:text-[#104F98] gap-2 cursor-pointer">
+            <img src="assets/img/Vector.svg" alt="Icone de loja">Loja de projetos
+          </p>
+
+          <a href="index.html" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
+            Dashboard
+          </a>
+
+          <a href="comprar.html" class="hover:font-bold hover:text-[#104F98] my-2 mx-8 font-bold text-[#104F98]">
+            Compra de créditos
+          </a>
+
+          <a href="#" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
+            Concluídos
+          </a>
+        </div>
+
+        <a href="#" class="flex flex-row hover:font-bold hover:text-[#104F98] my-2 gap-2 mb-8">
+          <img src="assets/img/Vector (1).svg" alt=""> Gestão de projetos
+        </a>
+
+        <a href="#" class="flex flex-row hover:font-bold hover:text-[#104F98] my-2 gap-2">
+          <img src="assets/img/icon color.svg" alt=""> Campanhas
+        </a>
+      </nav>
+    </aside>
+
+    <main class="flex-1 w-full max-w-6xl">
+
+      <nav aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2 text-sm mb-4">
+          <li>
+            <a href="index.html" class="text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors">Loja de Projetos</a>
+          </li>
+          <li class="text-gray-400 select-none" aria-hidden="true">&rsaquo;</li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-gray-900 underline underline-offset-4 transition-colors">Comprar Créditos</a>
+          </li>
+          <li class="text-gray-400 select-none" aria-hidden="true">&rsaquo;</li>
+          <li>
+            <span aria-current="page" class="text-gray-400 font-normal">Compra de créditos</span>
+          </li>
+        </ol>
+      </nav>
+
+      <h1 class="font-sora font-bold text-2xl md:text-3xl text-black">Compra de pontos base</h1>
+
+      <hr class="border-gray-200 my-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-[#f8f9fa] p-6 rounded-xl flex flex-col justify-between space-y-6">
+          <div>
+            <h2 class="font-sora font-bold text-xl text-black mb-4">Limite mensal</h2>
+            <p class="text-gray-700 text-sm md:text-base">Confira a quantidade de pontos disponível para compra</p>
+          </div>
+
+          <div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 flex overflow-hidden mb-3">
+              <div class="bg-[#0046ad] h-2.5 w-[50%]" title="Comprado esse mês"></div>
+              <div class="bg-[#38bdf8] h-2.5 w-[15%]" title="Em processamento"></div>
+            </div>
+
+            <div class="flex justify-between items-end text-xs md:text-sm">
+              <div>
+                <span class="text-gray-400 block text-xs">Comprado esse mês</span>
+                <span class="font-bold text-black text-sm">100 créditos</span>
+              </div>
+              <div class="text-right">
+                <span class="text-gray-400 block text-xs">Seu limite mensal</span>
+                <span class="font-bold text-black text-sm">2.000 créditos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#f8f9fa] p-6 rounded-xl space-y-5">
+          <h2 class="font-sora font-bold text-xl text-black mb-4">Informações</h2>
+
+          <ul class="space-y-4">
+            <li class="flex items-center space-x-3 text-gray-800 text-sm md:text-base">
+              <svg class="w-6 h-6 text-[#1d4ed8] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span>Valor mínimo de <strong class="font-bold text-black">100 créditos</strong></span>
+            </li>
+
+            <li class="flex items-center space-x-3 text-gray-800 text-sm md:text-base">
+              <svg class="w-6 h-6 text-[#1d4ed8] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span>Validade <strong class="font-bold text-black">24 meses</strong></span>
+            </li>
+
+            <li class="flex items-center space-x-3 text-gray-800 text-sm md:text-base">
+              <svg class="w-6 h-6 text-[#1d4ed8] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+              </svg>
+              <span>Limite de compra mensal <strong class="font-bold text-black">2.000 créditos</strong></span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- SEÇÃO: CREDITOS (RYANN) -->
+      <section class="seletor-creditos-container my-6 font-['Sora']">
+        <div class="bg-base-200 p-6 rounded-box flex flex-col md:flex-row justify-between items-center gap-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-4">Quantidade de créditos para compra</h3>
+            <div class="flex flex-row items-center gap-12 md:gap-24">
+              <button id="btn-menos" type="button"><img src="assets/img/menos.png" alt="menos"></button>
+              <span id="valor-creditos" class="text-4xl font-semibold">100</span>
+              <button id="btn-mais" type="button"><img src="assets/img/mais.png" alt="mais"></button>
+            </div>
+            <div class="w-full border-b border-gray-300 my-2"></div>
+            <p class="text-center text-gray-500 mt-2">Digite o valor aproximado</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg">Total em reais</h3>
+            <p id="total-reais" class="text-3xl font-bold mt-2">R$20.000,00</p>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <details class="collapse collapse-arrow bg-base-100">
+            <summary class="collapse-title font-semibold">Mais informações sobre o produto</summary>
+            <div class="collapse-content">
+              <p class="text-xs text-gray-500">
+                <strong>ATENÇÃO:</strong> A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- FOOTER (ELIS) -->
+      <footer class="footer border-t border-gray-200 bg-white pt-6 mt-12 flex items-center justify-between">
+        <a href="index.html" class="btn btn-ghost font-bold text-blue-900">
+          Voltar
+        </a>
+
+        <div class="flex gap-2">
+          <button class="btn btn-outline border-blue-900 text-blue-900">
+            Adicionar ao carrinho
+          </button>
+
+          <button class="flex gap-2 text-white btn bg-blue-900 border-blue-900 hover:bg-blue-950">
+            Continuar
+            <span>→</span>
+          </button>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script>
+    const btnMenos = document.getElementById('btn-menos');
+    const btnMais = document.getElementById('btn-mais');
+    const valorCreditos = document.getElementById('valor-creditos');
+    const totalReais = document.getElementById('total-reais');
+
+    let quantidade = 100;
+    const precoPorCredito = 200; // R$ 20.000 / 100 créditos = R$ 200 cada
+
+    function atualizarInterface() {
+      valorCreditos.textContent = quantidade;
+      const total = quantidade * precoPorCredito;
+      totalReais.textContent = `R$${total.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+    }
+
+    btnMenos.addEventListener('click', () => {
+      if (quantidade > 10) {
+        quantidade -= 10;
+        atualizarInterface();
+      }
+    });
+
+    btnMais.addEventListener('click', () => {
+      quantidade += 10;
+      atualizarInterface();
+    });
+  </script>
+</body>
+
+</html>
