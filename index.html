@@ -1,249 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header</title>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Aula 37</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
+
 <body class="bg-white p-4 ">
 
-  <!-- SEÇÃO: HEADER (responsável: Layse) -->
-  <header class="navbar h-[57px] px-6">
-    <div class="flex-1">
-      <img src="assets/img/Vector.jpg" alt="Logo" class="w-38">
-    </div>
-  
-    <div class="flex-none">
-      <img src="assets/img/user.jpg" alt="Perfil" class="w-26 rounded">
-    </div>
-  </header>
-  <!-- SEÇÃO: SIDEBAR (responsável: integrante João Gabriel)-->
-  <aside class="drawer w-fit mx-8 font-['Sora']">
-      <h2 class="flex fontbold text-2xl my-8">Canal do cliente</h2>
-  
-      <nav class="flex flex-col">
-          <div class="flex flex-col mb-8">
-              <p class="flex flex-row hover:font-bold hover:text-[#104F98] gap-2 cursor-pointer"> <img
-                      src="assets/img/Vector.svg" alt="Icone de loja">Loja de projetos</p>
-  
-              <a href="index.html" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
-                  Dashboard
-              </a>
-  
-              <a href="comprar.html" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
-                  Compra de créditos
-              </a>
-  
-              <a href="#" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
-                  Concluídos
-              </a>
-          </div>
-  
-          <a href="#" class="flex flex-row hover:font-bold hover:text-[#104F98] my-2 gap-2 mb-8"> <img
-                  src="assets/img/Vector (1).svg" alt=""> Gestão de projetos
-          </a>
-  
-          <a href="#" class="flex flex-row hover:font-bold hover:text-[#104F98] my-2 gap-2"> <img
-                  src="assets/img/icon color.svg" alt="">
-              Campanhas
-          </a>
-      </nav>
-  </aside>
-  <!-- SEÇÃO: HERO (responsável: integrante B) -->
-  <!-- SEÇÃO: CARDS (responsável: integrante C) -->
-  <!-- SEÇÃO: FAQ (responsável: integrante D) -->
-  <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
-<section class="min-h-screen bg-white text-neutral-900">
+    <!-- SEÇÃO: HEADER (responsável: Layse) -->
+    <header class="navbar h-[57px] px-6">
+        <div class="flex-1">
+            <img src="assets/img/Vector.jpg" alt="Logo" class="w-38">
+        </div>
 
-    <main class="max-w-6xl mx-auto px-7 py-7">
+        <div class="flex-none">
+            <img src="assets/img/user.jpg" alt="Perfil" class="w-26 rounded">
+        </div>
+    </header>
+    <!-- SEÇÃO: SIDEBAR (responsável: integrante João Gabriel)-->
+    <aside class="drawer w-fit mx-8 font-['Sora']">
+        <h2 class="flex fontbold text-2xl my-8">Canal do cliente</h2>
 
-        <section class="relative h-44 md:h-48 overflow-hidden rounded-xl">
+        <nav class="flex flex-col">
+            <div class="flex flex-col mb-8">
+                <p class="flex flex-row hover:font-bold hover:text-[#104F98] gap-2 cursor-pointer"> <img
+                        src="assets/img/Vector.svg" alt="Icone de loja">Loja de projetos</p>
 
-            <img
-                src="https://i.pinimg.com/736x/d2/36/63/d23663f334e710a3068be224ddd553ed.jpg"
-                alt="Equipe trabalhando"
-                class="absolute inset-0 h-full w-full object-cover">
+                <a href="index.html" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
+                    Dashboard
+                </a>
 
-            <div class="absolute inset-0 bg-black/49"></div>
+                <a href="comprar.html" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
+                    Compra de créditos
+                </a>
 
-            <div class="relative z-10 flex h-full max-w-lg flex-col justify-center px-10 text-white">
-
-                <span class="mb-3 w-fit rounded-full bg-white px-5 py-1 text-xs font-semibold text-neutral-900">
-                    Black Friday
-                </span>
-
-                <h1 class="text-2xl font-bold leading-tight">
-                    A maior oferta de projetos<br>
-                    AWE do ano
-                </h1>
-
-                <p class="mt-2 text-sm leading-5 text-white/90">
-                    A AWE está oferecendo diversos serviços e<br>
-                    produtos com descontos arrasadores.
-                </p>
+                <a href="#" class="hover:font-bold hover:text-[#104F98] my-2 mx-8">
+                    Concluídos
+                </a>
             </div>
 
-        </section>
+            <a href="#" class="flex flex-row hover:font-bold hover:text-[#104F98] my-2 gap-2 mb-8"> <img
+                    src="assets/img/Vector (1).svg" alt=""> Gestão de projetos
+            </a>
+
+            <a href="#" class="flex flex-row hover:font-bold hover:text-[#104F98] my-2 gap-2"> <img
+                    src="assets/img/icon color.svg" alt="">
+                Campanhas
+            </a>
+        </nav>
+    </aside>
+    <!-- SEÇÃO: HERO (responsável: integrante B) -->
+    <!-- SEÇÃO: CARDS (responsável: integrante C) -->
+    <!-- SEÇÃO: FAQ (responsável: integrante D) -->
+    <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
+    <section class="min-h-screen bg-white text-neutral-900">
+
+        <main class="max-w-6xl mx-auto px-7 py-7">
+
+            <section class="relative h-44 md:h-48 overflow-hidden rounded-xl">
+
+                <img src="https://i.pinimg.com/736x/d2/36/63/d23663f334e710a3068be224ddd553ed.jpg"
+                    alt="Equipe trabalhando" class="absolute inset-0 h-full w-full object-cover">
+
+                <div class="absolute inset-0 bg-black/49"></div>
+
+                <div class="relative z-10 flex h-full max-w-lg flex-col justify-center px-10 text-white">
+
+                    <span class="mb-3 w-fit rounded-full bg-white px-5 py-1 text-xs font-semibold text-neutral-900">
+                        Black Friday
+                    </span>
+
+                    <h1 class="text-2xl font-bold leading-tight">
+                        A maior oferta de projetos<br>
+                        AWE do ano
+                    </h1>
+
+                    <p class="mt-2 text-sm leading-5 text-white/90">
+                        A AWE está oferecendo diversos serviços e<br>
+                        produtos com descontos arrasadores.
+                    </p>
+                </div>
+
+            </section>
 
 
-        <section class="mt-8">
+            <section class="mt-8">
 
-            <h2 class="text-xl font-bold">
-                Compre pontos e distribua como quiser
-            </h2>
+                <h2 class="text-xl font-bold">
+                    Compre pontos e distribua como quiser
+                </h2>
 
 
-            <div class="mt-5 grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div class="mt-5 grid grid-cols-1 gap-6 md:grid-cols-3">
 
-                <article class="card rounded-lg border border-neutral-300 bg-white shadow-none">
+                    <article class="card rounded-lg border border-neutral-300 bg-white shadow-none">
 
-                    <div class="card-body p-4">
+                        <div class="card-body p-4">
 
-                        <div class="relative overflow-hidden rounded-md">
+                            <div class="relative overflow-hidden rounded-md">
 
-                            <span class="absolute left-1 top-1 z-10 rounded bg-sky-700 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-white">
-                                Cupom disponível
-                            </span>
+                                <span
+                                    class="absolute left-1 top-1 z-10 rounded bg-sky-700 px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-white">
+                                    Cupom disponível
+                                </span>
 
-                            <div class="flex h-[75px] items-center justify-center bg-neutral-900">
+                                <div class="flex h-[75px] items-center justify-center bg-neutral-900">
+
+                                    <h3 class="text-xl font-semibold text-white">
+                                        Design de App<span class="text-sky-400">_</span>
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <p class="mt-3 min-h-12 text-xs leading-4 text-neutral-500">
+                                Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.
+                            </p>
+
+
+                            <div class="mt-3 flex items-center justify-between font-bold text-sm text-neutral-900">
+
+                                <span>
+                                    Comprar créditos
+                                </span>
+
+                                <span class="text-xl font-normal">
+                                    ›
+                                </span>
+
+                            </div>
+
+
+                            <p class="text-xs text-neutral-500">
+                                5 créditos por R$10.000,00
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="card rounded-lg border border-neutral-300 bg-white shadow-none">
+
+                        <div class="card-body p-4">
+
+                            <div class="flex h-[75px] items-center justify-center rounded-md bg-neutral-900">
 
                                 <h3 class="text-xl font-semibold text-white">
-                                    Design de App<span class="text-sky-400">_</span>
+                                    Sistemas PDV<span class="text-sky-400">_</span>
                                 </h3>
 
                             </div>
 
-                        </div>
+
+                            <p class="mt-3 min-h-12 text-xs leading-4 text-neutral-500">
+                                Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super
+                                desconto.
+                            </p>
 
 
-                        <p class="mt-3 min-h-12 text-xs leading-4 text-neutral-500">
-                            Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.
-                        </p>
+                            <div class="mt-3 flex items-center justify-between font-bold text-sm text-neutral-900">
+
+                                <span>
+                                    Comprar créditos
+                                </span>
+
+                                <span class="text-xl font-normal">
+                                    ›
+                                </span>
+
+                            </div>
 
 
-                        <div class="mt-3 flex items-center justify-between font-bold text-sm text-neutral-900">
-
-                            <span>
-                                Comprar créditos
-                            </span>
-
-                            <span class="text-xl font-normal">
-                                ›
-                            </span>
-
-                        </div>
-
-
-                        <p class="text-xs text-neutral-500">
-                            5 créditos por R$10.000,00
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="card rounded-lg border border-neutral-300 bg-white shadow-none">
-
-                    <div class="card-body p-4">
-
-                        <div class="flex h-[75px] items-center justify-center rounded-md bg-neutral-900">
-
-                            <h3 class="text-xl font-semibold text-white">
-                                Sistemas PDV<span class="text-sky-400">_</span>
-                            </h3>
+                            <p class="text-xs text-neutral-500">
+                                21 créditos por R$120.000,00
+                            </p>
 
                         </div>
 
+                    </article>
 
-                        <p class="mt-3 min-h-12 text-xs leading-4 text-neutral-500">
-                            Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.
-                        </p>
+                    <article class="card rounded-lg border border-neutral-300 bg-white shadow-none">
 
+                        <div class="card-body p-4">
 
-                        <div class="mt-3 flex items-center justify-between font-bold text-sm text-neutral-900">
+                            <div class="flex h-[75px] items-center justify-center rounded-md bg-neutral-900">
 
-                            <span>
-                                Comprar créditos
-                            </span>
+                                <h3 class="text-xl font-semibold text-white">
+                                    Sites Wordpress<span class="text-sky-400">_</span>
+                                </h3>
 
-                            <span class="text-xl font-normal">
-                                ›
-                            </span>
-
-                        </div>
+                            </div>
 
 
-                        <p class="text-xs text-neutral-500">
-                            21 créditos por R$120.000,00
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="card rounded-lg border border-neutral-300 bg-white shadow-none">
-
-                    <div class="card-body p-4">
-
-                        <div class="flex h-[75px] items-center justify-center rounded-md bg-neutral-900">
-
-                            <h3 class="text-xl font-semibold text-white">
-                                Sites Wordpress<span class="text-sky-400">_</span>
-                            </h3>
-
-                        </div>
+                            <p class="mt-3 min-h-12 text-xs leading-4 text-neutral-500">
+                                Descontos cumulativos para projetos em Wordpress para 2025.
+                            </p>
 
 
-                        <p class="mt-3 min-h-12 text-xs leading-4 text-neutral-500">
-                            Descontos cumulativos para projetos em Wordpress para 2025.
-                        </p>
+                            <div class="mt-3 flex items-center justify-between font-bold text-sm text-neutral-900">
+
+                                <span>
+                                    Comprar créditos
+                                </span>
+
+                                <span class="text-xl font-normal">
+                                    ›
+                                </span>
+
+                            </div>
 
 
-                        <div class="mt-3 flex items-center justify-between font-bold text-sm text-neutral-900">
-
-                            <span>
-                                Comprar créditos
-                            </span>
-
-                            <span class="text-xl font-normal">
-                                ›
-                            </span>
+                            <p class="text-xs text-neutral-500">
+                                21 créditos por R$12.000,00
+                            </p>
 
                         </div>
 
-
-                        <p class="text-xs text-neutral-500">
-                            21 créditos por R$12.000,00
-                        </p>
-
-                    </div>
-
-                </article>
+                    </article>
 
 
-            </div>
+                </div>
 
-        </section>
-    </main>
-</section>
+            </section>
+        </main>
+    </section>
 
-<section>
-  <footer
-    class="footer sm:footer-horizontal bg-white text-neutral-content items-center justify-end border-t border-gray-300 p-4">
-    <nav>
-      <a>
-        <img class="w-24" src="assets/img/logo-agweb.png" alt="logo-agweb">
-      </a>
-    </nav>
-  </footer>
-</section>
+    <section>
+        <footer
+            class="footer sm:footer-horizontal bg-white text-neutral-content items-center justify-end border-t border-gray-300 p-4">
+            <nav>
+                <a>
+                    <img class="w-24" src="assets/img/logo-agweb.png" alt="logo-agweb">
+                </a>
+            </nav>
+        </footer>
+    </section>
 </body>
 
 </html>
