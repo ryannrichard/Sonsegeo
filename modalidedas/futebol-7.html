@@ -54,18 +54,10 @@
         </div>
 
     </header>
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-    <!-- Conteúdo da página -->
     <main class="w-full px-[6.7%] pt-5 pb-16 flex-1">
 
-        <!-- Caminho da página -->
+
         <div class="text-xs text-gray-500 mb-5">
             <a href="modalidades.html" class="hover:text-sky-500">Modalidades</a>
             <span class="mx-1">›</span>
@@ -78,10 +70,9 @@
 
         <div class="grid grid-cols-1 md:grid-cols-[245px_1fr] gap-5">
 
-            <!-- Imagem da modalidade -->
+
             <div>
-                <img src="../assets/img/fut-7.jpg"
-                    alt="Futebol masculino de 7 jogadores"
+                <img src="../assets/img/fut-7.jpg" alt="Futebol masculino de 7 jogadores"
                     class="w-full rounded-md object-cover">
 
                 <p class="text-[10px] text-gray-500 mt-2">
@@ -89,7 +80,7 @@
                 </p>
             </div>
 
-            <!-- Informações da modalidade -->
+
             <div class="text-xs leading-[1.65] text-gray-700">
 
                 <section class="mb-4">
@@ -98,7 +89,8 @@
                     </h2>
 
                     <p class="mb-4">
-                        O futebol 7 é uma modalidade coletiva disputada em campo reduzido, com sete jogadores por equipe, incluindo o goleiro.
+                        O futebol 7 é uma modalidade coletiva disputada em campo reduzido, com sete jogadores por
+                        equipe, incluindo o goleiro.
                     </p>
 
                     <p class="mb-3">As disputas serão conforme abaixo:</p>
@@ -148,6 +140,14 @@
             </div>
         </div>
     </main>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 
