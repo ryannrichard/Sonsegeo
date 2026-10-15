@@ -121,16 +121,17 @@
         </div>
     </main>
 
-    <footer class="bg-gray-100 border-t border-gray-200 mt-10">
-        <div
-            class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-gray-600">
-            <span>I Olimpíadas da Advocacia 2023</span>
-            <span>2023 HC Sports. Todos os direitos reservados.</span>
-        </div>
+    <footer class="footer md:footer-horizontal bg-gray-200 text-neutral-content items-center p-4">
+        <aside class="grid-flow-col items-center">
+            <p class="text-gray-700 font-semibold">I Olimpíadas da Advocacia 2023</p>
+        </aside>
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <p class="text-gray-700 font-semibold">2023 HC Sports. Todos os direitos reservados.</p>
+        </nav>
     </footer>
 
     <script>
-        const menuBtn = document.getElementById('menu-btn'); 
+        const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
         menuBtn.addEventListener('click', () => {
