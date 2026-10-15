@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olimpíada da Advocacia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .athlete-shape {
+        background: linear-gradient(140deg, #654c8c, #e52d50 65%, #9d245f);
+        border-radius: 48% 52% 40% 60% / 45% 35% 65% 55%;
+    }
+
+    .info-card {
+        transition: transform 0.2s;
+    }
+
+    .info-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .info-icon {
+        width: 48px;
+        height: 48px;
+        margin: -24px auto 8px;
+        border-radius: 50%;
+        background: #009ddd;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #000;
+    }
+
+    .info-icon svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu-link {
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+    .menu-link:hover {
+        color: #0ea5e9;
+    }
+
+    .inscrever-btn {
+        cursor: pointer;
+        transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .inscrever-btn:hover {
+        opacity: 0.8;
+        transform: translateY(-2px);
+    }
+</style>
+
+<body>
+    <header class="w-full bg-white shadow-sm border-b border-gray-100 font-sans sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <a href="#" class="flex items-center">
+                <img src="assets/img/logo-header.png" alt="Olimpíadas da Advocacia CONCAD"
+                    class="h-10 sm:h-12 object-contain" />
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-600">
+                <a href="index.html" class="text-[#0095D9] font-bold">Home</a>
+                <a href="modalidades.html">Modalidades</a>
+                <a href="noticias1.html">Notícias</a>
+                <a href="agenda.html">Cronograma</a>
+                <a href="#">Resultados</a>
+                <a href="#">Administradores</a>
+                <a href="#">Regulamento</a>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-gray-700 hover:text-[#0095D9] focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-3 text-sm font-semibold text-gray-600 shadow-lg">
+            <a href="index.html" class="py-1 border-b border-gray-50 text-[#009ee3] font-bold">Home</a>
+            <a href="modalidades.html" class="py-1 border-b border-gray-50">Modalidades</a>
+            <a href="noticias1.html" class="py-1 border-b border-gray-50">Notícias</a>
+            <a href="agenda.html" class="py-1 border-b border-gray-50 ">Cronograma</a>
+            <a href="#" class="py-1 border-b border-gray-50">Resultados</a>
+            <a href="#" class="py-1 border-b border-gray-50">Administradores</a>
+            <a href="#" class="py-1">Regulamento</a>
+        </div>
+
+    </header>
+    <main>
+        <section class="bg-black px-6 pb-12 pt-10 text-white md:px-12 md:pb-14 lg:px-20">
+
+            <div class="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2">
+
+                <div class="order-2 lg:order-1">
+
+                    <h1 class="mb-5 text-4xl font-extrabold leading-tight md:text-5xl">
+                        Olimpíadas da<br class="hidden md:block">
+                        Advocacia 2023
+                    </h1>
+
+                    <p class="mb-8 max-w-xl text-sm leading-relaxed text-gray-300">
+                        No dia a dia você corre, você luta, você se desdobra!
+                        E agora você pode fazer tudo isso por esporte! De 03 a 08
+                        de julho de 2023, Goiânia será a capital nacional da
+                        advocacia. Temos um encontro marcado. Inscrições a partir
+                        do dia 10 de abril!
+                    </p>
+
+                    <button type="button"
+                        class="inscrever-btn btn min-h-0 h-10 border-0 bg-gradient-to-r from-sky-500 via-purple-500 to-red-500 px-5 text-sm font-bold text-white">
+                        Inscreva-se
+                    </button>
+
+                </div>
+
+                <div class="order-1 flex justify-center lg:order-2">
+
+                    <div class="relative w-full max-w-[340px]">
+
+                        <div class="athlete-shape absolute right-1 top-8 h-56 w-48 md:h-64 md:w-56"></div>
+
+                        <img src="https://i.pinimg.com/1200x/10/33/a0/1033a0ee75f208e0cc9e29baceb758bb.jpg"
+                            alt="Atleta em cenário esportivo"
+                            class="relative z-10 mx-auto h-64 w-52 object-cover object-center [clip-path:ellipse(45%_48%_at_50%_50%)] md:h-72 md:w-60">
+
+                        <div
+                            class="absolute bottom-0 right-0 z-20 flex h-36 w-36 flex-col items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-blue-700 p-3 text-center md:h-40 md:w-40">
+
+                            <span class="mb-2 text-sm font-extrabold tracking-wider">
+                                FALTAM
+                            </span>
+
+                            <div class="flex gap-1">
+
+                                <div class="rounded bg-white px-1 py-1 text-gray-900">
+                                    <strong class="text-lg">13</strong>
+                                    <span class="block text-[7px]">DIAS</span>
+                                </div>
+
+                                <div class="rounded bg-white px-1 py-1 text-gray-900">
+                                    <strong class="text-lg">13</strong>
+                                    <span class="block text-[7px]">HORAS</span>
+                                </div>
+
+                                <div class="rounded bg-white px-1 py-1 text-gray-900">
+                                    <strong class="text-lg">13</strong>
+                                    <span class="block text-[7px]">MINUTOS</span>
+                                </div>
+
+                            </div>
+
+                            <p class="mt-2 text-[8px] font-semibold leading-tight">
+                                PARA O INÍCIO<br>DAS INSCRIÇÕES
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mx-auto mt-16 grid max-w-7xl grid-cols-1 gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
+
+                <article class="info-card rounded-md bg-white px-4 pb-5 pt-0 text-center text-gray-600 shadow-md">
+
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="9" r="5" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.5 13-1 8 4.5-2.5 4.5 2.5-1-8" />
+                        </svg>
+                    </div>
+
+                    <h2 class="mb-3 text-base font-bold text-gray-800">Participe</h2>
+
+                    <p class="text-xs leading-relaxed">
+                        A I Olimpíadas da Advocacia é a maior competição esportiva
+                        para Advogados no Brasil. A expectativa é reunir 4.000
+                        atletas em 06 dias de disputas. Fique atento às informações
+                        aqui no portal. Prepare-se!
+                    </p>
+
+                </article>
+
+                <article class="info-card rounded-md bg-white px-4 pb-5 pt-0 text-center text-gray-600 shadow-md">
+
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+                            <circle cx="12" cy="10" r="2.5" />
+                        </svg>
+                    </div>
+
+                    <h2 class="mb-3 text-base font-bold text-gray-800">Locais</h2>
+
+                    <p class="text-xs leading-relaxed">
+                        A competição será realizada em Goiás, nas cidades de
+                        Goiânia e Aparecida de Goiânia, em 10 centros esportivos,
+                        tendo o Clube CEL OAB como o principal local de competição.
+                    </p>
+
+                </article>
+
+                <article class="info-card rounded-md bg-white px-4 pb-5 pt-0 text-center text-gray-600 shadow-md">
+
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="3" y="5" width="18" height="16" rx="2" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 3v4M17 3v4M3 10h18" />
+                        </svg>
+                    </div>
+
+                    <h2 class="mb-3 text-base font-bold text-gray-800">Inscrições</h2>
+
+                    <p class="text-xs leading-relaxed">
+                        A partir de 10 de abril, totalmente on-line, aqui mesmo
+                        no portal do evento. Acompanhe as nossas atualizações aqui
+                        no portal. Leia atentamente o Regulamento Geral dos jogos.
+                    </p>
+
+                </article>
+
+                <article class="info-card rounded-md bg-white px-4 pb-5 pt-0 text-center text-gray-600 shadow-md">
+
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="9" />
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="12" cy="12" r="1.5" />
+                        </svg>
+                    </div>
+
+                    <h2 class="mb-3 text-base font-bold text-gray-800">Disputas</h2>
+
+                    <p class="text-xs leading-relaxed">
+                        São 19 modalidades disponíveis na competição, individuais
+                        e coletivas. Os jogos serão realizados em categorias
+                        masculino e feminino, com disputas também em categorias
+                        para PCDs.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="bg-white px-6 py-10 md:px-12 md:py-12 lg:px-20">
+
+            <div class="mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-2">
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80"
+                        alt="Atleta participando de uma competição de natação"
+                        class="h-56 w-full rounded-md object-cover md:h-64">
+                </div>
+
+                <div>
+
+                    <h2 class="mb-5 text-2xl font-extrabold text-red-600 md:text-3xl">
+                        Sobre a edição 2023
+                    </h2>
+
+                    <p class="mb-4 text-sm leading-relaxed text-gray-700">
+                        A edição 2023 da I Olimpíadas da Advocacia vem recheada
+                        de grandes atrações e competições de alto nível. São
+                        19 modalidades disponíveis que devem receber cerca de
+                        4.000 atletas advogados e advogadas de todo o Brasil.
+                    </p>
+
+                    <p class="text-sm leading-relaxed text-gray-700">
+                        O Centro Esportivo e de Lazer – CEL da OAB/CASAG, em
+                        Aparecida de Goiânia-GO, será o principal polo de
+                        competições do evento. Além do CEL, outros centros
+                        esportivos vão estruturar as disputas em várias
+                        modalidades. Uma competição de alto nível, a melhor
+                        infraestrutura, eventos e festividades. Venha aproveitar
+                        Goiânia e se divertir com a gente!
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <section class="bg-black text-white py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-3xl font-bold mb-8 text-white">Notícias</h2>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+                <article class="flex flex-col cursor-pointer group">
+                    <div class="overflow-hidden rounded-2xl mb-4">
+                        <img src="assets/img/ciclismo.png" alt="Atletas de ciclismo"
+                            class="w-full h-56 sm:h-64 object-cover rounded-2xl" />
+                    </div>
+
+                    <div class="text-xs font-semibold mb-2">
+                        <span class="text-gray-300">17/03/2023</span>
+                        <span class="text-gray-400 mx-1">•</span>
+                        <span class="text-emerald-400">Organização</span>
+                    </div>
+
+                    <a class="text-lg md:text-xl font-bold text-sky-400 mb-3 group-hover:underline leading-snug"
+                        href="noticias2.html">
+                        Colégio de presidentes das CAA/Concad anuncia inscrições para Olimpíadas da Advocacia
+                    </a>
+
+                    <p class="text-gray-300 text-xs md:text-sm leading-relaxed">
+                        As datas de inscrições para a primeira edição das Olimpíadas da Advocacia foram anunciadas
+                        nesta terça-feira (14/3) durante o 5º Colégio de presidentes das Caixas de Assistência aos
+                        Advogados (CAA) e da Coordenação Nacional das Caixas de Assistência dos Advogados (Concad)
+                        [...]
+                    </p>
+                </article>
+
+
+                <div class="flex flex-col space-y-4">
+
+                    <article class="flex flex-row items-center gap-4 group cursor-pointer">
+                        <img src="assets/img/basquete.png" alt="Basquete"
+                            class="w-44 h-24 object-cover rounded-xl flex-shrink-0" />
+                        <div>
+                            <div class="text-xs font-semibold mb-1">
+                                <span class="text-gray-300">17/03/2023</span>
+                                <span class="text-gray-400 mx-1">•</span>
+                                <span class="text-emerald-400">Organização</span>
+                            </div>
+                            <h4 class="text-xs md:text-sm font-bold text-sky-400 group-hover:underline leading-snug">
+                                Fique por dentro das modalidades que estarão em disputa, categorias e limites de
+                                atletas por seccional
+                            </h4>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-row items-center gap-4 group cursor-pointer">
+                        <img src="assets/img/corrida.png" alt="Corrida"
+                            class="w-44 h-24 object-cover rounded-xl flex-shrink-0" />
+                        <div>
+                            <div class="text-xs font-semibold mb-1">
+                                <span class="text-gray-300">17/03/2023</span>
+                                <span class="text-gray-400 mx-1">•</span>
+                                <span class="text-purple-400">Inscrições</span>
+                            </div>
+                            <h4 class="text-xs md:text-sm font-bold text-sky-400 group-hover:underline leading-snug">
+                                Olimpíada da Advocacia terá inscrições 100% digitais
+                            </h4>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-row items-center gap-4 group cursor-pointer">
+                        <img src="assets/img/ciclismo-estrada.png" alt="Ciclismo na estrada"
+                            class="w-44 h-24 object-cover rounded-xl flex-shrink-0" />
+                        <div>
+                            <div class="text-xs font-semibold mb-1">
+                                <span class="text-gray-300">07/03/2023</span>
+                                <span class="text-gray-400 mx-1">•</span>
+                                <span class="text-emerald-400">Organização</span>
+                            </div>
+                            <h4 class="text-xs md:text-sm font-bold text-sky-400 group-hover:underline leading-snug">
+                                Goiânia sediará em 2023 a primeira edição das Olimpíadas da Advocacia
+                            </h4>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <div class="mt-12">
+                <a href="#" class="inline-flex items-center gap-2 text-sm text-gray-300 hover:text-sky-400">
+                    <span>Clique na seta e acesse todas as notícias</span>
+                    <span class="text-sky-400">→</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[#f2f2f2] py-16 px-4 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-[#333333] mb-12">Depoimentos</h2>
+
+            <div class="relative flex items-center justify-center">
+                <button
+                    class="absolute left-2 lg:left-12 z-20 w-10 h-10 bg-[#009ee3] text-white rounded-full flex items-center justify-center shadow-md hover:bg-sky-600 transition-colors focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pr-0.5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <div class="w-full pl-16 lg:pl-28 overflow-hidden">
+                    <div class="flex gap-6 items-center">
+
+                        <div
+                            class="w-[320px] sm:w-[360px] flex-shrink-0 bg-gradient-to-tr from-[#0089cf] via-[#7b3e80] to-[#e61c24] text-white rounded-2xl p-6 shadow-md flex flex-col justify-between h-[300px]">
+                            <p class="text-[13px] leading-snug text-gray-100 font-normal">
+                                Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When
+                                An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen
+                                Book.
+                            </p>
+                            <div class="flex items-center gap-3.5 mt-4">
+                                <img src="assets/img/jefferson.png" alt="Jefferson Thawan"
+                                    class="w-14 h-14 rounded-full object-cover border-2 border-white/60" />
+                                <div>
+                                    <h3 class="font-bold text-base leading-tight">Jefferson Thawan</h3>
+                                    <p class="text-xs text-gray-200">Função/Cargo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="w-[320px] sm:w-[360px] flex-shrink-0 bg-gradient-to-tr from-[#0089cf] via-[#7b3e80] to-[#e61c24] text-white rounded-2xl p-6 shadow-md flex flex-col justify-between h-[300px] ring-2 ring-[#009ee3]">
+                            <p class="text-[13px] leading-snug text-gray-100 font-normal">
+                                Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When
+                                An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen
+                                Book.
+                            </p>
+                            <div class="flex items-center gap-3.5 mt-4">
+                                <img src="assets/img/cesimar.png" alt="Cesimar Xavier"
+                                    class="w-14 h-14 rounded-full object-cover border-2 border-white/60" />
+                                <div>
+                                    <h3 class="font-bold text-base leading-tight">Cesimar Xavier</h3>
+                                    <p class="text-xs text-gray-200">Função/Cargo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="w-[320px] sm:w-[360px] flex-shrink-0 bg-gradient-to-tr from-[#0089cf] via-[#7b3e80] to-[#e61c24] text-white rounded-2xl p-6 shadow-md flex flex-col justify-between h-[300px]">
+                            <p class="text-[13px] leading-snug text-gray-100 font-normal">
+                                Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When
+                                An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen
+                                Book.
+                            </p>
+                            <div class="flex items-center gap-3.5 mt-4">
+                                <img src="assets/img/zadoque.png" alt="Zadoque"
+                                    class="w-14 h-14 rounded-full object-cover border-2 border-white/60" />
+                                <div>
+                                    <h3 class="font-bold text-base leading-tight">Zadoque</h3>
+                                    <p class="text-xs text-gray-200">Função/Cargo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-2.5 mt-10">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#c2c2c2]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#009ee3]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#c2c2c2]"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-[#c2c2c2]"></span>
+            </div>
+
+        </div>
+    </section>
+    <section class="bg-white py-12 px-6">
+        <h2 class="text-center text-2xl font-bold text-red-500">
+            Dúvidas Frequentes
+        </h2>
+
+        <p class="text-center text-gray-500 text-sm mt-3 mb-8">
+            Dúvidas frequentemente questionadas por usuários que acessam a página
+        </p>
+
+        <div class="max-w-4xl mx-auto">
+
+            <div class="collapse collapse-arrow bg-neutral text-white mb-1">
+                <input type="radio" name="perguntas" checked="checked" />
+                <div class="collapse-title text-sm font-semibold">
+                    O evento é algum tipo de premiação para os vencedores?
+                </div>
+                <div class="collapse-content bg-white text-gray-600 text-sm">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aqui ficará a resposta da pergunta.
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border-b border-gray-200">
+                <input type="radio" name="perguntas" />
+                <div class="collapse-title text-sm">
+                    Where does it come from?
+                </div>
+                <div class="collapse-content text-sm text-gray-500">
+                    <p>Resposta da pergunta.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border-b border-gray-200">
+                <input type="radio" name="perguntas" />
+                <div class="collapse-title text-sm">
+                    Where can I get some?
+                </div>
+                <div class="collapse-content text-sm text-gray-500">
+                    <p>Resposta da pergunta.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border-b border-gray-200">
+                <input type="radio" name="perguntas" />
+                <div class="collapse-title text-sm">
+                    What is Lorem Ipsum?
+                </div>
+                <div class="collapse-content text-sm text-gray-500">
+                    <p>Resposta da pergunta.</p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow border-b border-gray-200">
+                <input type="radio" name="perguntas" />
+                <div class="collapse-title text-sm">
+                    Why do we use it?
+                </div>
+                <div class="collapse-content text-sm text-gray-500">
+                    <p>Resposta da pergunta.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="bg-black border-4 border-sky-500 py-10 px-6 text-center">
+
+        <h2 class="text-white text-xl font-bold mb-6">
+            Realização
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-5 mb-12">
+            <div class="bg-white rounded-md p-3 w-36 h-14 flex items-center justify-center">
+                <img src="assets/img/Logo-OAB-concad-atualizada-1 (1).png" alt="Realização"
+                    class="max-h-full max-w-full object-contain">
+            </div>
+
+            <div class="bg-white rounded-md p-3 w-36 h-14 flex items-center justify-center">
+                <img src="assets/img/Logo-OAB-concad-atualizada-1 (1).png" alt="Realização"
+                    class="max-h-full max-w-full object-contain">
+            </div>
+
+            <div class="bg-white rounded-md p-3 w-36 h-14 flex items-center justify-center">
+                <img src="assets/img/Logo-OAB-concad-atualizada-1 (1).png" alt="Realização"
+                    class="max-h-full max-w-full object-contain">
+            </div>
+        </div>
+
+        <h2 class="text-white text-xl font-bold mb-6">
+            Organização
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-5">
+            <div class="bg-white rounded-md p-3 w-36 h-14 flex items-center justify-center">
+                <img src="assets/img/Logo-HC-Sports-website (1).png" alt="Organização"
+                    class="max-h-full max-w-full object-contain">
+            </div>
+
+            <div class="bg-white rounded-md p-3 w-36 h-14 flex items-center justify-center">
+                <img src="assets/img/Logo-HC-Sports-website (1).png" alt="Organização"
+                    class="max-h-full max-w-full object-contain">
+            </div>
+
+            <div class="bg-white rounded-md p-3 w-36 h-14 flex items-center justify-center">
+                <img src="assets/img/Logo-HC-Sports-website (1).png" alt="Organização"
+                    class="max-h-full max-w-full object-contain">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="bg-white py-12 px-8">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-2xl font-bold text-red-500 mb-8">
+                Fale conosco
+            </h2>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="flex flex-col gap-5">
+
+                    <div>
+                        <label class="block text-sm text-gray-700 mb-2">
+                            Nome
+                        </label>
+                        <input type="text" placeholder="Digite o seu nome"
+                            class="input w-full bg-white border border-gray-200 text-gray-700 focus:outline-sky-500"
+                            required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm text-gray-700 mb-2">
+                            E-mail
+                        </label>
+                        <input type="email" placeholder="Digite o seu e-mail"
+                            class="input w-full bg-white border border-gray-200 text-gray-700 focus:outline-sky-500"
+                            required>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm text-gray-700 mb-2">
+                            Ocupação
+                        </label>
+                        <input type="text" placeholder="Digite a sua ocupação"
+                            class="input w-full bg-white border border-gray-200 text-gray-700 focus:outline-sky-500">
+                    </div>
+
+                </div>
+
+                <div>
+                    <label class="block text-sm text-gray-700 mb-2">
+                        Mensagem
+                    </label>
+                    <textarea placeholder="Digite a mensagem"
+                        class="textarea w-full h-52 bg-white border border-gray-200 text-gray-700 focus:outline-sky-500"
+                        required></textarea>
+                </div>
+
+                <div class="md:col-span-2 flex justify-end">
+                    <button type="submit" class="btn bg-sky-500 hover:bg-sky-600 text-white border-none">
+                        Enviar e-mail
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    </main>
+    <footer class="footer sm:footer-horizontal bg-base-200 text-base-content border-base-300 border-t p-10">
+        <aside>
+            <img src="assets/img/Olimpiadas Concad Logo Horizontal (1) 3.png" alt="logo das Olimpiadas">
+        </aside>
+        <nav>
+            <a
+                class="link link-hover hover:text-sky-500 transition-colors duration-300 font-bold text-gray-600 text-sm">Home</a>
+        </nav>
+        <nav>
+            <a
+                class="link link-hover hover:text-sky-500 transition-colors duration-300 font-bold text-gray-600 text-sm">Modalidades</a>
+        </nav>
+        <nav>
+            <a
+                class="link link-hover hover:text-sky-500 transition-colors duration-300 font-bold text-gray-600 text-sm">Agenda</a>
+        </nav>
+        <nav>
+            <a
+                class="link link-hover hover:text-sky-500 transition-colors duration-300 font-bold text-gray-600 text-sm">Resultados</a>
+        </nav>
+        <nav>
+            <a
+                class="link link-hover hover:text-sky-500 transition-colors duration-300 font-bold text-gray-600 text-sm">Canais</a>
+        </nav>
+        <nav>
+            <a
+                class="link link-hover hover:text-sky-500 transition-colors duration-300 font-bold text-gray-600 text-sm">Regulamento</a>
+        </nav>
+        <nav>
+            <img src="assets/img/Vector.png" alt="">
+        </nav>
+    </footer>
+    <footer class="footer sm:footer-horizontal footer-center bg-base-200 text-base-content p-4">
+        <aside>
+            <p>2023 HC Sports. Todos os direitos reservados.</p>
+        </aside>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>

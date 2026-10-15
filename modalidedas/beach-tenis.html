@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalidades - Apresentação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-[Open_sans] min-h-screen flex flex-col">
+    <header class="w-full bg-white shadow-sm border-b border-gray-100 font-sans sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <a href="#" class="flex items-center">
+                <img src="../assets/img/logo-header.png" alt="Olimpíadas da Advocacia CONCAD" class="h-10 sm:h-12 " />
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-600">
+                <a href="index.html">Home</a>
+                <a href="modalidades.html" class="text-[#0095D9] font-bold">Modalidades</a>
+                <a href="noticias1.html">Notícias</a>
+                <a href="agenda.html">Cronograma</a>
+                <a href="#">Resultados</a>
+                <a href="#">Administradores</a>
+                <a href="#">Regulamento</a>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-gray-700 hover:text-[#0095D9] focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-3 text-sm font-semibold text-gray-600 shadow-lg">
+            <a href="index.html" class="py-1 border-b border-gray-50">Home</a>
+            <a href="modalidades.html" class="py-1 border-b border-gray-50 text-[#009ee3] font-bold">Modalidades</a>
+            <a href="noticias1.html" class="py-1 border-b border-gray-50">Notícias</a>
+            <a href="agenda.html" class="py-1 border-b border-gray-50">Cronograma</a>
+            <a href="#" class="py-1 border-b border-gray-50">Resultados</a>
+            <a href="#" class="py-1 border-b border-gray-50">Administradores</a>
+            <a href="#" class="py-1">Regulamento</a>
+        </div>
+
+    </header>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <!-- Conteúdo da página -->
+    <main class="w-full px-[6.7%] pt-5 pb-16 flex-1">
+
+        <!-- Caminho da página -->
+        <div class="text-xs text-gray-500 mb-5">
+            <a href="modalidades.html" class="hover:text-sky-500">Modalidades</a>
+            <span class="mx-1">›</span>
+            <span class="text-red-500">Beach Tennis</span>
+        </div>
+
+        <h1 class="font-['Poppins'] font-bold text-xl text-gray-800 mb-3">
+            Beach Tennis
+        </h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-[245px_1fr] gap-5">
+
+            <!-- Imagem da modalidade -->
+            <div>
+                <img src="../assets/img/beach-tennis.jpg"
+                    alt="Beach Tennis"
+                    class="w-full rounded-md object-cover">
+
+                <p class="text-[10px] text-gray-500 mt-2">
+                    Fonte da figura: hsports
+                </p>
+            </div>
+
+            <!-- Informações da modalidade -->
+            <div class="text-xs leading-[1.65] text-gray-700">
+
+                <section class="mb-4">
+                    <h2 class="font-['Poppins'] font-semibold text-base mb-2">
+                        Formato de disputa
+                    </h2>
+
+                    <p class="mb-4">
+                        O beach tennis é um esporte de raquete praticado em uma quadra de areia, no qual os participantes devem devolver a bola por cima da rede antes que ela toque o chão.
+                    </p>
+
+                    <p class="mb-3">As disputas serão conforme abaixo:</p>
+
+                    <ul class="list-disc pl-4">
+                        <li>Categorias: LIVRE – Masculino e Feminino;</li>
+                        <li>Limitação por Seccional: até 01 equipe por categoria;</li>
+                        <li>Número de atletas: até 04 por equipe.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2 class="font-['Poppins'] font-semibold text-base mb-2">
+                        Regras básicas
+                    </h2>
+
+                    <ul class="list-disc pl-4">
+                        <li>Aguarde a divulgação do Regulamento Geral das Olimpíadas.</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2 class="font-['Poppins'] font-semibold text-base mb-2">
+                        Local de competição
+                    </h2>
+
+                    <p class="mb-4">
+                        CEL OAB-GO.Av. de Furnas, 312 – Jardim Rio Grande, Aparecida de
+                        Goiânia – GO, 74982-490
+                    </p>
+
+                    <p>Outros locais também estão em definição.</p>
+                </section>
+
+                <section>
+                    <h2 class="font-['Poppins'] font-semibold text-base mb-2">
+                        Programação
+                    </h2>
+
+                    <ul class="list-disc pl-4">
+                        <li>Segunda-feira (03/07) – Jogos a partir das 08h00;</li>
+                        <li>Terça-feira (04/07) – Semifinais a partir das 09h00;</li>
+                        <li>Quarta-feira (05/07) – Finais a partir das 09h00.</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
