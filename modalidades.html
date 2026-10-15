@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modalidades - Apresentação</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modalidades - Apresentação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
+
+<body class="font-[Open_sans] min-h-screen flex flex-col">
     <header class="w-full bg-white shadow-sm border-b border-gray-100 font-sans sticky top-0 z-50">
         <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
             <a href="#" class="flex items-center">
                 <img src="assets/img/logo-header.png" alt="Olimpíadas da Advocacia CONCAD"
-                    class="h-10 sm:h-12 object-contain" />
+                    class="h-10 sm:h-12 " />
             </a>
 
             <div class="hidden lg:flex items-center gap-7 text-sm font-semibold text-gray-600">
@@ -53,5 +63,115 @@
             mobileMenu.classList.toggle('hidden');
         });
     </script>
+
+     <section class="w-full px-[6.7%] pt-6 pb-16 flex-1">
+
+        <div class="mb-10">
+            <h1 class="font-[Poppins] font-bold text-xl mb-5 text-gray-800">
+                MODALIDADES
+            </h1>
+
+            <div class="flex flex-wrap items-center gap-3">
+                <div class="input input-bordered flex items-center w-full sm:w-[361px] h-9 min-h-0 rounded-md border-gray-200 bg-white">
+                    <img src="assets/img/🦆 icon _search_.png"
+                        class="w-4 h-4 mx-2 "
+                        alt="">
+                    <input type="text"
+                        placeholder="Pesquise aqui por uma modalidade"
+                        class="w-full text-xs">
+                </div>
+
+                <button class="btn btn-outline btn-sm h-9 min-h-0 rounded-md border-gray-200 bg-white text-xs font-normal">
+                    Filtrar por
+                    <img src="assets/img/Vector.png" class="w-3 h-2 ml-3" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-10 gap-y-14">
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">B</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="basquete-3x3.html" class="flex items-center hover:text-sky-500">
+                        <img src="assets/img/sport.png" class="h-5 w-5 mr-1" alt="">
+                        Basquete 3x3
+                    </a>
+                    <a href="beach-tenis.html" class="flex items-center hover:text-sky-500">
+                        <img src="assets/img/sport (1).png" class="h-5 w-5 mr-1 " alt="">
+                        Beach Tennis
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">C</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="Corrida-de-Rua.html" class="flex items-center hover:text-sky-500"><img src="assets/img/medium.png" class="h-5 w-5 mr-1" alt=""> Corrida de Rua</a>
+                    <a href="crossfit.html" class="flex items-center hover:text-sky-500"><img src="assets/img/crossfit.png" class="h-5 w-5 mr-1" alt=""> Crossfit</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">F</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="futebol-society.html" class="flex items-center hover:text-sky-500"><img src="assets/img/futebol.png" class="h-5 w-5 mr-1" alt=""> Futebol Society</a>
+                    <a href="futebol-de-mesa.html" class="flex items-center hover:text-sky-500"><img src="assets/img/futebol.png" class="h-5 w-5 mr-1" alt=""> Futebol de Mesa</a>
+                    <a href="futebol-11.html" class="flex hover:text-sky-500"><img src="assets/img/futebol.png" class="h-5 w-5 mr-1" alt=""> Futebol 11</a>
+                    <a href="futebol-7.html" class="flex items-center hover:text-sky-500"><img src="assets/img/futebol.png" class="h-5 w-5 mr-1" alt=""> Futebol 7</a>
+                    <a href="futevolei.html" class="flex items-center hover:text-sky-500"><img src="assets/img/volei.png" class="h-5 w-5 mr-1" alt=""> Futevôlei</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">J</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="jiu-jitsu.html" class="flex items-center hover:text-sky-500"><img src="assets/img/luta.png" class="h-5 w-5 mr-1" alt=""> Jiu-jitsu</a>
+                    <a href="judo.html" class="flex items-center hover:text-sky-500"><img src="assets/img/luta.png" class="h-5 w-5 mr-1" alt=""> Judô</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">N</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="natacao.html" class="flex items-center hover:text-sky-500"><img src="assets/img/natacao.png" class="h-5 w-5 mr-1" alt=""> Natação</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">S</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="sinuca.html" class="flex items-center hover:text-sky-500"><img src="assets/img/sinuca.png" class="h-5 w-5 mr-1" alt=""> Sinuca</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">T</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="tenis.html" class="flex items-center hover:text-sky-500"><img src="assets/img/tenis.png" class="h-5 w-5 mr-1" alt=""> Tênis</a>
+                    <a href="tenis-de-mesa.html" class="flex items-center hover:text-sky-500"><img src="assets/img/sport (1).png" class="h-5 w-5 mr-1" alt=""> Tênis de Mesa</a>
+                    <a href="tiro-esportivo.html" class="flex items-center hover:text-sky-500"><img src="assets/img/tiro.png" alt=""> Tiro Esportivo</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">V</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="volei-de-praia.html" class="flex items-center hover:text-sky-500"><img src="assets/img/volei.png" class="h-5 w-5 mr-1" alt=""> Vôlei de Praia</a>
+                    <a href="volei-de-quadra.html" class="flex items-center hover:text-sky-500"><img src="assets/img/volei.png" class="h-5 w-5 mr-1" alt=""> Vôlei de Quadra</a>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-4xl font-normal mb-1 text-gray-700">X</h2>
+                <div class="text-sm space-y-1.5">
+                    <a href="xadrez.html" class="flex items-center hover:text-sky-500"><img src="assets/img/xadrez.png" class="h-5 w-5 mr-1" alt=""> Xadrez</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
+
 </html>
