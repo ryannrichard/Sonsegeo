@@ -1,6 +1,6 @@
 # Projeto — Criminalidade e Violência no Brasil
 
-Participantes:
+## Participantes:
 
 Infoweb 2V - Sonsegeo: João Gabriel, Aleff Lohan, Keyty Winslet, Elis Vitória, Ryann Richard e Layse Vitória
 
